@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosy's Nostalgieladen - Startseite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-amber-50/30 text-gray-800 font-sans antialiased">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-amber-900/10 h-20 flex items-center shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tight text-amber-900 flex items-center gap-2">
+                <i class="fa-solid fa-clock-rotate-left text-amber-700"></i> Rosy's Nostalgieladen
+            </a>
+            <nav class="hidden md:flex items-center gap-1 font-medium">
+                <a href="index.html" class="bg-amber-600 text-white rounded-lg px-4 py-2 transition">Startseite</a>
+                <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Über uns</a>
+                <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Menü</a>
+                <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Galerie</a>
+                <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Termin buchen</a>
+                <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Kontakt</a>
+            </nav>
+            <div class="md:hidden flex items-center">
+                <button id="menu-btn" class="text-2xl text-amber-900 focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-amber-900/10 px-6 py-4 flex flex-col gap-2 shadow-lg fixed w-full z-40">
+        <a href="index.html" class="bg-amber-600 text-white rounded-lg px-4 py-2 font-medium">Startseite</a>
+        <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Über uns</a>
+        <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Menü</a>
+        <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Galerie</a>
+        <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Termin buchen</a>
+        <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Kontakt</a>
+    </div>
+
+    <section class="min-h-[80vh] relative bg-cover bg-center flex items-center justify-center text-center px-6" style="background-image: url('https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=1600');">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative z-10 max-w-4xl mx-auto text-white flex flex-col items-center gap-6">
+            <span class="bg-amber-500/80 text-white uppercase tracking-widest text-xs font-bold px-4 py-1.5 rounded-full backdrop-blur-sm">Antiquitäten & Raritäten</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">Rosy's Nostalgieladen</h1>
+            <p class="text-lg md:text-xl text-gray-200 max-w-2xl font-light">Ihr Antiquitätengeschäft in Zürich für An- und Verkauf von Raritäten und historischen Schätzen.</p>
+            <div class="flex flex-wrap gap-4 justify-center mt-4">
+                <a href="services.html" class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-2xl transition duration-300">Sortiment entdecken</a>
+                <a href="booking.html" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white px-8 py-4 rounded-xl text-lg font-semibold backdrop-blur-sm transition duration-300">Beratung anfragen</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16 flex flex-col items-center gap-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-amber-950">Willkommen in Zürich-Hottingen</h2>
+            <div class="w-24 h-1 bg-amber-600 rounded-full"></div>
+            <p class="text-gray-600 text-lg">Tauchen Sie ein in eine Welt voller Geschichte, Charakter und unvergesslicher Fundstücke aus vergangenen Epochen.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-amber-900/5 flex flex-col">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=600" alt="Historische Möbel" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-amber-900 mb-2">Antike Möbel</h3>
+                        <p class="text-gray-600 text-sm">Handgefertigte Kommoden, Tische und Stühle mit Patina und Geschichte.</p>
+                    </div>
+                    <a href="services.html" class="mt-4 inline-flex items-center text-amber-700 font-semibold text-sm hover:text-amber-800">Mehr erfahren <i class="fa-solid fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-amber-900/5 flex flex-col">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&q=80&w=600" alt="Gemälde & Kunst" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-amber-900 mb-2">Kunst & Gemälde</h3>
+                        <p class="text-gray-600 text-sm">Klassische Ölgemälde, gerahmte Drucke und erlesene Kunstgegenstände.</p>
+                    </div>
+                    <a href="services.html" class="mt-4 inline-flex items-center text-amber-700 font-semibold text-sm hover:text-amber-800">Mehr erfahren <i class="fa-solid fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-amber-900/5 flex flex-col">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=600" alt="Porzellan & Silber" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-amber-900 mb-2">Porzellan & Silber</h3>
+                        <p class="text-gray-600 text-sm">Edles Geschirr, Bestecke, Figuren und nostalgische Tischkultur.</p>
+                    </div>
+                    <a href="services.html" class="mt-4 inline-flex items-center text-amber-700 font-semibold text-sm hover:text-amber-800">Mehr erfahren <i class="fa-solid fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-amber-900/5 flex flex-col">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=600" alt="Sammlerstücke" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-amber-900 mb-2">Raritäten & Trödel</h3>
+                        <p class="text-gray-600 text-sm">Überraschende Kleinode, Uhren, Bücher und nostalgische Sammlerobjekte.</p>
+                    </div>
+                    <a href="services.html" class="mt-4 inline-flex items-center text-amber-700 font-semibold text-sm hover:text-amber-800">Mehr erfahren <i class="fa-solid fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-amber-900 text-white rounded-3xl p-10 md:p-16 relative overflow-hidden shadow-2xl flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="absolute right-0 top-0 opacity-10 translate-x-10 -translate-y-10 pointer-events-none">
+                <i class="fa-solid fa-landmark text-[250px]"></i>
+            </div>
+            <div class="relative z-10 max-w-xl">
+                <h3 class="text-3xl font-bold mb-4">Haben Sie Erbstücke zu verkaufen?</h3>
+                <p class="text-amber-100 text-lg font-light">Wir bewerten Ihre Antiquitäten fair und bieten fachkundige Beratung beim Ankauf von historischen Gegenständen und Sammlungen in Zürich.</p>
+            </div>
+            <div class="relative z-10 flex-shrink-0">
+                <a href="booking.html" class="bg-amber-500 hover:bg-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg inline-flex items-center gap-3 transition">
+                    <i class="fa-solid fa-calendar-days"></i> Termin vereinbaren
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4 flex items-center gap-2"><i class="fa-solid fa-clock-rotate-left text-amber-500"></i> Rosy's Nostalgieladen</h4>
+                <p class="text-sm text-gray-400">Ihr vertrauenswürdiges Fachgeschäft für Antiquitäten, Trödel und Raritäten im Herzen von Zürich.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4">Navigation</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="hover:text-amber-400 transition">Startseite</a></li>
+                    <li><a href="about.html" class="hover:text-amber-400 transition">Über uns</a></li>
+                    <li><a href="services.html" class="hover:text-amber-400 transition">Menü / Sortiment</a></li>
+                    <li><a href="gallery.html" class="hover:text-amber-400 transition">Galerie</a></li>
+                    <li><a href="booking.html" class="hover:text-amber-400 transition">Termin buchen</a></li>
+                    <li><a href="contacts.html" class="hover:text-amber-400 transition">Kontakt</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4">Kontakt</h4>
+                <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-location-dot text-amber-500 mr-2"></i> Asylstrasse 133, 8032 Zürich, Switzerland</p>
+                <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-phone text-amber-500 mr-2"></i> +41 44 381 17 53</p>
+                <p class="text-sm text-gray-400"><i class="fa-solid fa-envelope text-amber-500 mr-2"></i> rosys@nostalgieladen.ch</p>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-6 mt-8 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
+            &copy; 2024 Rosy's Nostalgieladen. Alle Rechte vorbehalten.
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>"},{"path":"about.html","content":"<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosy's Nostalgieladen - Über uns</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-amber-50/30 text-gray-800 font-sans antialiased">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-amber-900/10 h-20 flex items-center shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tight text-amber-900 flex items-center gap-2">
+                <i class="fa-solid fa-clock-rotate-left text-amber-700"></i> Rosy's Nostalgieladen
+            </a>
+            <nav class="hidden md:flex items-center gap-1 font-medium">
+                <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Startseite</a>
+                <a href="about.html" class="bg-amber-600 text-white rounded-lg px-4 py-2 transition">Über uns</a>
+                <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Menü</a>
+                <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Galerie</a>
+                <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Termin buchen</a>
+                <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Kontakt</a>
+            </nav>
+            <div class="md:hidden flex items-center">
+                <button id="menu-btn" class="text-2xl text-amber-900 focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-amber-900/10 px-6 py-4 flex flex-col gap-2 shadow-lg fixed w-full z-40">
+        <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Startseite</a>
+        <a href="about.html" class="bg-amber-600 text-white rounded-lg px-4 py-2 font-medium">Über uns</a>
+        <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Menü</a>
+        <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Galerie</a>
+        <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Termin buchen</a>
+        <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Kontakt</a>
+    </div>
+
+    <div class="bg-amber-900 text-amber-100 py-12 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col gap-2">
+            <div class="text-sm text-amber-300 font-medium flex items-center gap-2">
+                <a href="index.html" class="hover:underline">Startseite</a>
+                <span>&gt;</span>
+                <span>Über uns</span>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-extrabold text-white">Über Rosy's Nostalgieladen</h1>
+        </div>
+    </div>
+
+    <main class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
+            <div class="flex flex-col gap-6">
+                <span class="text-amber-700 font-bold tracking-widest uppercase text-xs">Tradition in Zürich</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-amber-950">Geschichte mit Charakter und Seele</h2>
+                <p class="text-gray-700 leading-relaxed">Willkommen in Rosy's Nostalgieladen, Ihrem charmanten Fachgeschäft für Antiquitäten und Trödel im Herzen von Zürich. An der Asylstrasse 133 gelegen, bieten wir eine sorgfältig ausgewählte Palette an historischen Gegenständen, einzigartigen Sammlerstücken und nostalgischen Schätzen an.</p>
+                <p class="text-gray-700 leading-relaxed">Ob Sie seltene Antiquitäten suchen oder gut erhaltene Erbstücke in gute Hände geben möchten – wir stehen Ihnen beim An- und Verkauf mit fachkundiger Beratung und Leidenschaft für das Besondere zur Seite. Besuchen Sie uns und tauchen Sie ein in vergangene Epochen voller Geschichte und Charakter.</p>
+            </div>
+            <div class="relative">
+                <div class="absolute -inset-4 bg-amber-600/10 rounded-3xl transform rotate-3"></div>
+                <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=800" alt="Antiquitätengeschäft Zürich" class="relative rounded-2xl shadow-xl w-full h-[400px] object-cover">
+            </div>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-20 border border-amber-900/10">
+            <h3 class="text-2xl font-bold text-amber-950 mb-8 text-center">Einzigartige Merkmale</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="flex gap-4 items-start bg-amber-50/50 p-6 rounded-2xl border border-amber-900/5">
+                    <div class="bg-amber-600 text-white w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 text-xl font-bold">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-amber-900 text-lg mb-1">An- und Verkauf in Zürich-Hottingen</h4>
+                        <p class="text-gray-600 text-sm">Spezialisiert auf den An- und Ankauf von ausgesuchten Antiquitäten, Raritäten und Trödel.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start bg-amber-50/50 p-6 rounded-2xl border border-amber-900/5">
+                    <div class="bg-amber-600 text-white w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 text-xl font-bold">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-amber-900 text-lg mb-1">Inhaberin Rosmarin Ruesch</h4>
+                        <p class="text-gray-600 text-sm">Geführt mit langjähriger Erfahrung, grossem Fachwissen und echter persönlicher Leidenschaft.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mb-12">
+            <h3 class="text-3xl font-bold text-amber-950 mb-2">Unsere Leitung</h3>
+            <p class="text-gray-600">Das Gesicht hinter dem Nostalgieladen</p>
+        </div>
+        <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-amber-900/10 text-center pb-8">
+            <div class="h-64 overflow-hidden relative mb-6">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=600" alt="Rosmarin Ruesch" class="w-full h-full object-cover">
+            </div>
+            <h4 class="text-xl font-bold text-amber-900">Rosmarin Ruesch</h4>
+            <p class="text-amber-600 font-medium text-sm mt-1">Inhaberin</p>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4 flex items-center gap-2"><i class="fa-solid fa-clock-rotate-left text-amber-500"></i> Rosy's Nostalgieladen</h4>
+                <p class="text-sm text-gray-400">Ihr vertrauenswürdiges Fachgeschäft für Antiquitäten, Trödel und Raritäten im Herzen von Zürich.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4">Navigation</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="hover:text-amber-400 transition">Startseite</a></li>
+                    <li><a href="about.html" class="hover:text-amber-400 transition">Über uns</a></li>
+                    <li><a href="services.html" class="hover:text-amber-400 transition">Menü / Sortiment</a></li>
+                    <li><a href="gallery.html" class="hover:text-amber-400 transition">Galerie</a></li>
+                    <li><a href="booking.html" class="hover:text-amber-400 transition">Termin buchen</a></li>
+                    <li><a href="contacts.html" class="hover:text-amber-400 transition">Kontakt</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4">Kontakt</h4>
+                <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-location-dot text-amber-500 mr-2"></i> Asylstrasse 133, 8032 Zürich, Switzerland</p>
+                <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-phone text-amber-500 mr-2"></i> +41 44 381 17 53</p>
+                <p class="text-sm text-gray-400"><i class="fa-solid fa-envelope text-amber-500 mr-2"></i> rosys@nostalgieladen.ch</p>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-6 mt-8 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
+            &copy; 2024 Rosy's Nostalgieladen. Alle Rechte vorbehalten.
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>"},{"path":"services.html","content":"<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosy's Nostalgieladen - Menü & Sortiment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-amber-50/30 text-gray-800 font-sans antialiased">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-amber-900/10 h-20 flex items-center shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tight text-amber-900 flex items-center gap-2">
+                <i class="fa-solid fa-clock-rotate-left text-amber-700"></i> Rosy's Nostalgieladen
+            </a>
+            <nav class="hidden md:flex items-center gap-1 font-medium">
+                <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Startseite</a>
+                <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Über uns</a>
+                <a href="services.html" class="bg-amber-600 text-white rounded-lg px-4 py-2 transition">Menü</a>
+                <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Galerie</a>
+                <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Termin buchen</a>
+                <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Kontakt</a>
+            </nav>
+            <div class="md:hidden flex items-center">
+                <button id="menu-btn" class="text-2xl text-amber-900 focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-amber-900/10 px-6 py-4 flex flex-col gap-2 shadow-lg fixed w-full z-40">
+        <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Startseite</a>
+        <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Über uns</a>
+        <a href="services.html" class="bg-amber-600 text-white rounded-lg px-4 py-2 font-medium">Menü</a>
+        <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Galerie</a>
+        <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Termin buchen</a>
+        <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Kontakt</a>
+    </div>
+
+    <div class="bg-amber-900 text-amber-100 py-12 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col gap-2">
+            <div class="text-sm text-amber-300 font-medium flex items-center gap-2">
+                <a href="index.html" class="hover:underline">Startseite</a>
+                <span>&gt;</span>
+                <span>Menü</span>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-extrabold text-white">Menü & Sortiment</h1>
+        </div>
+    </div>
+
+    <main class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold text-amber-950 mb-4">Unsere Kategorien</h2>
+            <p class="text-gray-600">Entdecken Sie unser vielfältiges Angebot an antiken Möbeln, Kunst, Porzellan und einzigartigen Sammlerstücken direkt vor Ort in Zürich.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-amber-900/5 flex flex-col">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=600" alt="Antike Möbel" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                    <span class="absolute top-4 right-4 bg-amber-900/80 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full">Möbel</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-amber-900 mb-2">Antike Kleinmöbel</h3>
+                        <p class="text-gray-600 text-sm mb-4">Kommoden, Beistelltische, Sekretäre und Vitrinen aus verschiedenen Jahrhunderten mit individueller Holzmaserung.</p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs text-gray-500 font-medium">Unikate</span>
+                        <a href="booking.html" class="text-amber-700 hover:text-amber-950 font-bold text-sm inline-flex items-center gap-1">Anfragen <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-amber-900/5 flex flex-col">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&q=80&w=600" alt="Gemälde" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                    <span class="absolute top-4 right-4 bg-amber-900/80 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full">Kunst</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-amber-900 mb-2">Gemälde & Bilder</h3>
+                        <p class="text-gray-600 text-sm mb-4">Ölgemälde, Aquarelle, historische Stichte und kunstvolle Rahmen aus vergangenen Epochen.</p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs text-gray-500 font-medium">Originale</span>
+                        <a href="booking.html" class="text-amber-700 hover:text-amber-950 font-bold text-sm inline-flex items-center gap-1">Anfragen <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-amber-900/5 flex flex-col">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=600" alt="Porzellan" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                    <span class="absolute top-4 right-4 bg-amber-900/80 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full">Porzellan</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-amber-900 mb-2">Porzellan & Keramik</h3>
+                        <p class="text-gray-600 text-sm mb-4">Teeservices, dekorative Teller, Vasen und edles Essgeschirr namhafter historischer Manufakturen.</p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs text-gray-500 font-medium">Sammlerstücke</span>
+                        <a href="booking.html" class="text-amber-700 hover:text-amber-950 font-bold text-sm inline-flex items-center gap-1">Anfragen <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-amber-900/5 flex flex-col">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=600" alt="Silber & Metall" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                    <span class="absolute top-4 right-4 bg-amber-900/80 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full">Silber</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-amber-900 mb-2">Silber & Zinn</h3>
+                        <p class="text-gray-600 text-sm mb-4">Silberbesteck, Kerzenleuchter, Zinnkrüge und edle metallene Dekorationsgegenstände.</p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs text-gray-500 font-medium">Edelmetalle</span>
+                        <a href="booking.html" class="text-amber-700 hover:text-amber-950 font-bold text-sm inline-flex items-center gap-1">Anfragen <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-amber-900/5 flex flex-col">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&q=80&w=600" alt="Uhren & Schmuck" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                    <span class="absolute top-4 right-4 bg-amber-900/80 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full">Uhren</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-amber-900 mb-2">Uhren & Taschenuhren</h3>
+                        <p class="text-gray-600 text-sm mb-4">Mechanische Tischuhren, antike Taschenuhren und nostalgische Zeitmesser mit präziser Mechanik.</p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs text-gray-500 font-medium">Mechanik</span>
+                        <a href="booking.html" class="text-amber-700 hover:text-amber-950 font-bold text-sm inline-flex items-center gap-1">Anfragen <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-amber-900/5 flex flex-col">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1461360370896-922624d12aa1?auto=format&fit=crop&q=80&w=600" alt="Trödel & Raritäten" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                    <span class="absolute top-4 right-4 bg-amber-900/80 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full">Raritäten</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-amber-900 mb-2">Trödel & Kuriositäten</h3>
+                        <p class="text-gray-600 text-sm mb-4">Überraschende Fundstücke, alte Bücher, nostalgisches Spielzeug und charmante Sammlerobjekte.</p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs text-gray-500 font-medium">Entdeckungen</span>
+                        <a href="booking.html" class="text-amber-700 hover:text-amber-950 font-bold text-sm inline-flex items-center gap-1">Anfragen <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4 flex items-center gap-2"><i class="fa-solid fa-clock-rotate-left text-amber-500"></i> Rosy's Nostalgieladen</h4>
+                <p class="text-sm text-gray-400">Ihr vertrauenswürdiges Fachgeschäft für Antiquitäten, Trödel und Raritäten im Herzen von Zürich.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4">Navigation</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="hover:text-amber-400 transition">Startseite</a></li>
+                    <li><a href="about.html" class="hover:text-amber-400 transition">Über uns</a></li>
+                    <li><a href="services.html" class="hover:text-amber-400 transition">Menü / Sortiment</a></li>
+                    <li><a href="gallery.html" class="hover:text-amber-400 transition">Galerie</a></li>
+                    <li><a href="booking.html" class="hover:text-amber-400 transition">Termin buchen</a></li>
+                    <li><a href="contacts.html" class="hover:text-amber-400 transition">Kontakt</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4">Kontakt</h4>
+                <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-location-dot text-amber-500 mr-2"></i> Asylstrasse 133, 8032 Zürich, Switzerland</p>
+                <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-phone text-amber-500 mr-2"></i> +41 44 381 17 53</p>
+                <p class="text-sm text-gray-400"><i class="fa-solid fa-envelope text-amber-500 mr-2"></i> rosys@nostalgieladen.ch</p>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-6 mt-8 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
+            &copy; 2024 Rosy's Nostalgieladen. Alle Rechte vorbehalten.
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>"},{"path":"gallery.html","content":"<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosy's Nostalgieladen - Galerie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-amber-50/30 text-gray-800 font-sans antialiased">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-amber-900/10 h-20 flex items-center shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tight text-amber-900 flex items-center gap-2">
+                <i class="fa-solid fa-clock-rotate-left text-amber-700"></i> Rosy's Nostalgieladen
+            </a>
+            <nav class="hidden md:flex items-center gap-1 font-medium">
+                <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Startseite</a>
+                <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Über uns</a>
+                <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Menü</a>
+                <a href="gallery.html" class="bg-amber-600 text-white rounded-lg px-4 py-2 transition">Galerie</a>
+                <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Termin buchen</a>
+                <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Kontakt</a>
+            </nav>
+            <div class="md:hidden flex items-center">
+                <button id="menu-btn" class="text-2xl text-amber-900 focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-amber-900/10 px-6 py-4 flex flex-col gap-2 shadow-lg fixed w-full z-40">
+        <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Startseite</a>
+        <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Über uns</a>
+        <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Menü</a>
+        <a href="gallery.html" class="bg-amber-600 text-white rounded-lg px-4 py-2 font-medium">Galerie</a>
+        <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Termin buchen</a>
+        <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Kontakt</a>
+    </div>
+
+    <div class="bg-amber-900 text-amber-100 py-12 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col gap-2">
+            <div class="text-sm text-amber-300 font-medium flex items-center gap-2">
+                <a href="index.html" class="hover:underline">Startseite</a>
+                <span>&gt;</span>
+                <span>Galerie</span>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-extrabold text-white">Galerie & Impressionen</h1>
+        </div>
+    </div>
+
+    <main class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold text-amber-950 mb-4">Eindrücke aus dem Laden</h2>
+            <p class="text-gray-600">Ein kleiner Einblick in unsere Schätze an der Asylstrasse 133 in Zürich.</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md bg-white">
+                <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=600" alt="Antiquität 1" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md bg-white">
+                <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=600" alt="Antiquität 2" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md bg-white">
+                <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&q=80&w=600" alt="Antiquität 3" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md bg-white">
+                <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=600" alt="Antiquität 4" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md bg-white">
+                <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&q=80&w=600" alt="Antiquität 5" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md bg-white">
+                <img src="https://images.unsplash.com/photo-1461360370896-922624d12aa1?auto=format&fit=crop&q=80&w=600" alt="Antiquität 6" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4 flex items-center gap-2"><i class="fa-solid fa-clock-rotate-left text-amber-500"></i> Rosy's Nostalgieladen</h4>
+                <p class="text-sm text-gray-400">Ihr vertrauenswürdiges Fachgeschäft für Antiquitäten, Trödel und Raritäten im Herzen von Zürich.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4">Navigation</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="hover:text-amber-400 transition">Startseite</a></li>
+                    <li><a href="about.html" class="hover:text-amber-400 transition">Über uns</a></li>
+                    <li><a href="services.html" class="hover:text-amber-400 transition">Menü / Sortiment</a></li>
+                    <li><a href="gallery.html" class="hover:text-amber-400 transition">Galerie</a></li>
+                    <li><a href="booking.html" class="hover:text-amber-400 transition">Termin buchen</a></li>
+                    <li><a href="contacts.html" class="hover:text-amber-400 transition">Kontakt</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4">Kontakt</h4>
+                <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-location-dot text-amber-500 mr-2"></i> Asylstrasse 133, 8032 Zürich, Switzerland</p>
+                <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-phone text-amber-500 mr-2"></i> +41 44 381 17 53</p>
+                <p class="text-sm text-gray-400"><i class="fa-solid fa-envelope text-amber-500 mr-2"></i> rosys@nostalgieladen.ch</p>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-6 mt-8 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
+            &copy; 2024 Rosy's Nostalgieladen. Alle Rechte vorbehalten.
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>"},{"path":"booking.html","content":"<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosy's Nostalgieladen - Termin buchen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-amber-50/30 text-gray-800 font-sans antialiased">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-amber-900/10 h-20 flex items-center shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tight text-amber-900 flex items-center gap-2">
+                <i class="fa-solid fa-clock-rotate-left text-amber-700"></i> Rosy's Nostalgieladen
+            </a>
+            <nav class="hidden md:flex items-center gap-1 font-medium">
+                <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Startseite</a>
+                <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Über uns</a>
+                <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Menü</a>
+                <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Galerie</a>
+                <a href="booking.html" class="bg-amber-600 text-white rounded-lg px-4 py-2 transition">Termin buchen</a>
+                <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Kontakt</a>
+            </nav>
+            <div class="md:hidden flex items-center">
+                <button id="menu-btn" class="text-2xl text-amber-900 focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-amber-900/10 px-6 py-4 flex flex-col gap-2 shadow-lg fixed w-full z-40">
+        <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Startseite</a>
+        <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Über uns</a>
+        <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Menü</a>
+        <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Galerie</a>
+        <a href="booking.html" class="bg-amber-600 text-white rounded-lg px-4 py-2 font-medium">Termin buchen</a>
+        <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Kontakt</a>
+    </div>
+
+    <div class="bg-amber-900 text-amber-100 py-12 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col gap-2">
+            <div class="text-sm text-amber-300 font-medium flex items-center gap-2">
+                <a href="index.html" class="hover:underline">Startseite</a>
+                <span>&gt;</span>
+                <span>Termin buchen</span>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-extrabold text-white">Termin & Beratung anfragen</h1>
+        </div>
+    </div>
+
+    <main class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="max-w-2xl mx-auto bg-white rounded-3xl shadow-2xl p-8 md:p-12 border border-amber-900/10">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-amber-950 mb-2">Besprechung vereinbaren</h2>
+                <p class="text-gray-600 text-sm">Planen Sie einen Besuch oder eine Schätzung für Ihre Antiquitäten.</p>
+            </div>
+
+            <form action="https://formsubmit.co/rosys@nostalgieladen.ch" method="POST" class="flex flex-col gap-6">
+                <div class="flex flex-col gap-2">
+                    <label for="name" class="text-sm font-semibold text-gray-700">Vollständiger Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Max Mustermann" class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label for="email" class="text-sm font-semibold text-gray-700">E-Mail-Adresse</label>
+                    <input type="email" id="email" name="email" required placeholder="max@example.com" class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label for="phone" class="text-sm font-semibold text-gray-700">Telefonnummer</label>
+                    <input type="tel" id="phone" name="phone" required placeholder=\"+41 44 ...\" class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label for="date" class="text-sm font-semibold text-gray-700">Wunschtermin</label>
+                    <input type="date" id="date" name="date" required class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label for="message" class="text-sm font-semibold text-gray-700">Nachricht / Details zu Gegenständen</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Beschreiben Sie kurz Ihr Anliegen..." class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-amber-600 to-amber-700 text-white py-5 rounded-xl text-lg font-bold hover:shadow-xl transition duration-300">Termin anfragen</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4 flex items-center gap-2"><i class="fa-solid fa-clock-rotate-left text-amber-500"></i> Rosy's Nostalgieladen</h4>
+                <p class="text-sm text-gray-400">Ihr vertrauenswürdiges Fachgeschäft für Antiquitäten, Trödel und Raritäten im Herzen von Zürich.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4">Navigation</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="hover:text-amber-400 transition">Startseite</a></li>
+                    <li><a href="about.html" class="hover:text-amber-400 transition">Über uns</a></li>
+                    <li><a href="services.html" class="hover:text-amber-400 transition">Menü / Sortiment</a></li>
+                    <li><a href="gallery.html" class="hover:text-amber-400 transition">Galerie</a></li>
+                    <li><a href="booking.html" class="hover:text-amber-400 transition">Termin buchen</a></li>
+                    <li><a href="contacts.html" class="hover:text-amber-400 transition">Kontakt</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4">Kontakt</h4>
+                <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-location-dot text-amber-500 mr-2"></i> Asylstrasse 133, 8032 Zürich, Switzerland</p>
+                <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-phone text-amber-500 mr-2"></i> +41 44 381 17 53</p>
+                <p class="text-sm text-gray-400"><i class="fa-solid fa-envelope text-amber-500 mr-2"></i> rosys@nostalgieladen.ch</p>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-6 mt-8 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
+            &copy; 2024 Rosy's Nostalgieladen. Alle Rechte vorbehalten.
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>"},{"path":"contacts.html","content":"<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosy's Nostalgieladen - Kontakt</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-amber-50/30 text-gray-800 font-sans antialiased">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-amber-900/10 h-20 flex items-center shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tight text-amber-900 flex items-center gap-2">
+                <i class="fa-solid fa-clock-rotate-left text-amber-700"></i> Rosy's Nostalgieladen
+            </a>
+            <nav class="hidden md:flex items-center gap-1 font-medium">
+                <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Startseite</a>
+                <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Über uns</a>
+                <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Menü</a>
+                <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Galerie</a>
+                <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 transition">Termin buchen</a>
+                <a href="contacts.html" class="bg-amber-600 text-white rounded-lg px-4 py-2 transition">Kontakt</a>
+            </nav>
+            <div class="md:hidden flex items-center">
+                <button id="menu-btn" class="text-2xl text-amber-900 focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-amber-900/10 px-6 py-4 flex flex-col gap-2 shadow-lg fixed w-full z-40">
+        <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Startseite</a>
+        <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Über uns</a>
+        <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Menü</a>
+        <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Galerie</a>
+        <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 text-gray-700 font-medium">Termin buchen</a>
+        <a href="contacts.html" class="bg-amber-600 text-white rounded-lg px-4 py-2 font-medium">Kontakt</a>
+    </div>
+
+    <div class="bg-amber-900 text-amber-100 py-12 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col gap-2">
+            <div class="text-sm text-amber-300 font-medium flex items-center gap-2">
+                <a href="index.html" class="hover:underline">Startseite</a>
+                <span>&gt;</span>
+                <span>Kontakt</span>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-extrabold text-white">Kontakt & Standort</h1>
+        </div>
+    </div>
+
+    <main class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 border border-amber-900/10 flex flex-col gap-8">
+                <div>
+                    <h2 class="text-3xl font-bold text-amber-950 mb-4">Besuchen Sie uns</h2>
+                    <p class="text-gray-600">Wir freuen uns auf Ihren persönlichen Besuch oder Ihre telefonische Kontaktaufnahme.</p>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-amber-600 text-white w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 text-xl font-bold">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-amber-900 text-lg mb-1">Adresse</h3>
+                            <p class="text-gray-600">Asylstrasse 133, 8032 Zürich, Switzerland</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="bg-amber-600 text-white w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 text-xl font-bold">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-amber-900 text-lg mb-1">Telefon</h3>
+                            <p class="text-gray-600">+41 44 381 17 53</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="bg-amber-600 text-white w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 text-xl font-bold">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-amber-900 text-lg mb-1">E-Mail</h3>
+                            <p class="text-gray-600">rosys@nostalgieladen.ch</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-amber-900/10 h-[500px]">
+                <iframe title="Standort Karte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2701.8707166133917!2d8.5638!3d47.3698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4790aa0b986b7787%3A0x1c0f0011bb29e00!2sAsylstrasse%20133%2C%208032%20Z%C3%BCrich!5e0!3m2!1sde!2sch!4v1650000000000!5m2!1sde!2sch" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4 flex items-center gap-2"><i class="fa-solid fa-clock-rotate-left text-amber-500"></i> Rosy's Nostalgieladen</h4>
+                <p class="text-sm text-gray-400">Ihr vertrauenswürdiges Fachgeschäft für Antiquitäten, Trödel und Raritäten im Herzen von Zürich.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4">Navigation</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="hover:text-amber-400 transition">Startseite</a></li>
+                    <li><a href="about.html" class="hover:text-amber-400 transition">Über uns</a></li>
+                    <li><a href="services.html" class="hover:text-amber-400 transition">Menü / Sortiment</a></li>
+                    <li><a href="gallery.html" class="hover:text-amber-400 transition">Galerie</a></li>
+                    <li><a href="booking.html" class="hover:text-amber-400 transition">Termin buchen</a></li>
+                    <li><a href="contacts.html" class="hover:text-amber-400 transition">Kontakt</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4">Kontakt</h4>
+                <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-location-dot text-amber-500 mr-2"></i> Asylstrasse 133, 8032 Zürich, Switzerland</p>
+                <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-phone text-amber-500 mr-2"></i> +41 44 381 17 53</p>
+                <p class="text-sm text-gray-400"><i class="fa-solid fa-envelope text-amber-500 mr-2"></i> rosys@nostalgieladen.ch</p>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-6 mt-8 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
+            &copy; 2024 Rosy's Nostalgieladen. Alle Rechte vorbehalten.
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
